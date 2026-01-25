@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header-section">
+  <h1>Midhila R Nair</h1>
+  <h3>Hi, I’m a graphic designer and a 3D artist creating visually striking designs and 3D models</h3>
+</header>
+
+<nav class="nav-section">
+  <ul>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact-me">Contact</a></li>
+    <li><a href="#" id="adminBtn">Admin</a></li>
+  </ul>
+</nav>
+
+<button id="toggle-theme">Theme</button>
+
+<main>
+
+  
+  <section class="card education-section" id="education">
+    <h2>Education</h2>
+
+    <h3>St Joseph College of Communication</h3>
+    <p>BA (Hons) Animation and Graphic Design</p>
+    <p>Mahatma Gandhi University, Kottayam </p>
+    <p>2024-2028</p>
+
+    <h3>Mar Thoma Senior Secondary School</h3>
+    <p>Higher Secondary Education </p>
+    <p>2024</p>
+  </section>
+
+<section class="card projects-section" id="projects">
+  <h2>Projects</h2>
+
+  <div class="project-grid">
+    
+    <div class="project-item" data-gallery="brochure">
+      <img src="images/brochure1.JPG" alt="Brochure Design">
+      <div class="overlay"><p>Brochure Design</p></div>
+    </div>
+
+    
+    <div class="project-item" data-gallery="layout">
+      <img src="images/layout1.jpg" alt="Page Layout Design">
+      <div class="overlay"><p>Page Layout</p></div>
+    </div>
+
+     <div class="project-item" data-gallery="social">
+      <img src="images/social1.jpg" alt="Social Media Post">
+      <div class="overlay"><p>Social Media Post</p></div>
+    </div>
+
+    
+    <div class="project-item" data-gallery="3dmodel">
+      <img src="images/3d-model1.jpg" alt="3D Model">
+      <div class="overlay"><p>3D Model</p></div>
+    </div>
+  </div>
+  
+  
+  </section>
+
+  
+  <section class="card contact-section" id="contact-me">
+    <h2>Contact Me</h2>
+
+    <form id="contact-form">
+      <label>Name</label>
+      <input type="text" id="input_name" placeholder="Your name" required>
+
+      <label>Email</label>
+      <input type="email" id="input_email" placeholder="Your email" required>
+
+      <label>Message</label>
+      <textarea id="input_msg" placeholder="Your message" required></textarea>
+
+      <p id="confirm-response"></p>
+     <button type="submit" class="form-button">Send Message</button>
+
+    </form>
+  </section>
+
+  
+  <section class="card admin-section" id="admin-login">
+    <h2>Admin Login</h2>
+
+    <form id="admin-form">
+      <label>Username</label>
+      <input type="text" id="input_user" required>
+
+      <label>Password</label>
+      <input type="password" id="input_pass" required>
+     <button type="submit" class="form-button">Login</button>
+
+    </form>
+  </section>
+
+  
+  <section class="card responses-section" id="user-responses">
+    <h2>User Responses</h2>
+    <div id="user-messages"></div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
+
