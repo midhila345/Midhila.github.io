@@ -106,12 +106,10 @@ main {
   padding: 2.5rem;
 }
 
-.about-box {
-   padding: 30px;
-  max-width: 650px;
-  margin-top: 20px;
+.about-section p {
+  margin-top: 1rem;     
+  line-height: 1.7;     
 }
-
 
 .projects-section { background-color: #FFFFFF; padding:2rem; }
 .contact-section { background-color: #FAF7F3; padding:2.5rem; }
