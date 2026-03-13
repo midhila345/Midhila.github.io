@@ -21,7 +21,7 @@ body {
   box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
 .header-section h1{
-  font-size:56px;
+  font-size:3.5rem;
   font-weight:600;
   letter-spacing:1px;
 }
@@ -107,9 +107,7 @@ main {
 }
 
 .about-box {
-  border: 2px solid #D7CCC8;
-  padding: 30px;
-  border-radius: 10px;
+   padding: 30px;
   max-width: 650px;
   margin-top: 20px;
 }
@@ -214,9 +212,9 @@ text-align:center; padding:0.5rem 0; opacity:0; transition:opacity 0.3s ease; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
-
 
 .dark-theme { background:#2B1D18; color:#F5F1EB; }
 .dark-theme .card, 
