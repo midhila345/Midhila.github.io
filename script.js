@@ -76,15 +76,16 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor=>{
   });
 });
 
+document.addEventListener("DOMContentLoaded", function(){
 
 const projectItems = document.querySelectorAll(".project-item");
 const modal = document.getElementById("gallery-modal");
 const galleryContent = document.querySelector(".gallery-content");
 const closeGallery = document.getElementById("close-gallery");
 
-
 projectItems.forEach(item => {
   item.addEventListener("click", () => {
+    console.log("Project clicked");
 
     galleryContent.innerHTML = "";
 
@@ -97,17 +98,18 @@ projectItems.forEach(item => {
     });
 
     modal.style.display = "flex";
+
   });
 });
-
 
 closeGallery.addEventListener("click", () => {
   modal.style.display = "none";
 });
 
-
 modal.addEventListener("click", (e) => {
   if (e.target === modal) {
     modal.style.display = "none";
   }
+});
+
 });
