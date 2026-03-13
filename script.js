@@ -76,3 +76,38 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor=>{
   });
 });
 
+
+const projectItems = document.querySelectorAll(".project-item");
+const modal = document.getElementById("gallery-modal");
+const galleryContent = document.querySelector(".gallery-content");
+const closeGallery = document.getElementById("close-gallery");
+
+
+projectItems.forEach(item => {
+  item.addEventListener("click", () => {
+
+    galleryContent.innerHTML = "";
+
+    const images = item.querySelectorAll("img");
+
+    images.forEach(img => {
+      const newImg = document.createElement("img");
+      newImg.src = img.src;
+      galleryContent.appendChild(newImg);
+    });
+
+    modal.style.display = "flex";
+  });
+});
+
+
+closeGallery.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+});
